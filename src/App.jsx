@@ -1,4 +1,10 @@
+import Home from "./components/Home";
+
 const App = () => {
-  return <h2>Sidebar Starter</h2>;
+  return (
+    <main>
+      <Home />
+    </main>
+  );
 };
 export default App;
