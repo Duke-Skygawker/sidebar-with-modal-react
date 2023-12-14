@@ -1,10 +1,12 @@
+import { useGlobalContext } from "../Context";
 import logo from "../logo.svg";
 import { links, social } from "../data";
 
 const Sidebar = () => {
+  const { closeCross } = useGlobalContext();
   return (
     <div className="sidebar">
-      <button className="close-btn">X</button>
+      <button className="close-btn">{closeCross}</button>
       <div className="logo">
         <img src={logo} alt="" />
       </div>

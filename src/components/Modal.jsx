@@ -1,11 +1,18 @@
+import { useGlobalContext } from "../Context";
+
 const Modal = () => {
+  const { closeCross, showModal, setShowModal } = useGlobalContext();
   return (
-    <div className="modal">
-      <div className="modal-content">
-        <button className="close-btn">X</button>
-        <p>Modal content</p>
+    showModal && (
+      <div className="modal">
+        <div className="modal-content">
+          <button className="close-btn" onClick={() => setShowModal(false)}>
+            {closeCross}
+          </button>
+          <p>Modal content</p>
+        </div>
       </div>
-    </div>
+    )
   );
 };
 export default Modal;

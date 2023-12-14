@@ -324,6 +324,7 @@ body {
   top: calc(50% - 4rem);
   left: calc(50% - 11rem);
   z-index: 999;
+  border: solid 2px red;
   /* display: none; */
 }
 .modal-content {
